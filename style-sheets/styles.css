@@ -1,0 +1,167 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap');
+
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*GLOBAL*/
+h1 {
+    color: #CBBD6C;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 95px;
+    line-height: 0.9;
+}
+
+h2 {
+    color: #CBBD6C;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    line-height: 0.9;
+    text-align: center;
+}
+
+h3 {
+    color: #CBBD6C;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+}
+
+h4 {
+    color: #F8F8F8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23.5px;
+}
+
+
+p {
+    color: #F8F8F8;
+    font-family: 'Raleway', sans-serif;
+}
+
+hr {
+    border: 2px solid #A08150;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+
+.main {
+    background-color: #2B2D31;
+    display: flex;
+    justify-content: center;
+}
+
+.container-main {
+    background-color: #313338;
+    margin-top: 40px;
+    border-radius: 15px;
+    max-width: 1024px;
+}
+
+.intro {
+    display: flex;
+}
+
+.container-profile {
+    width: 40%;
+}
+
+.img-profile {
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border: 5px solid #A08150;
+}
+
+.container-name {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px 30px 0px 0px;
+    gap: 10px;
+}
+
+.container-projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 70px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.container-projects div {
+    background-color: #CBBD6C;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.container-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subcontainer-info {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.container-txt {
+    padding: 30px;
+}
+
+.external-link {
+    text-decoration: none;
+    display: flex;
+}
+
+.external-link img {
+    height: 15px;
+}
+
+.img-contat {
+    background-color: #A08150;
+    border-radius: 20%;
+    height: 100px;
+}
+
+.ul-contact {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    padding-left: 20px;
+    background-color: #A08150;
+}
+
+.color-dark {
+    color: #2B2D31;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*MEDIUM SCREENS*/
+
+/*SMALL SCREENS*/
