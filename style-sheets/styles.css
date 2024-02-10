@@ -68,10 +68,14 @@ hr {
     margin-top: 40px;
     border-radius: 15px;
     max-width: 1024px;
+    border: 2px solid #A08150;
+    margin-bottom: 20px;
 }
 
 .intro {
     display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .container-profile {
@@ -103,9 +107,46 @@ hr {
     gap: 30px;
 }
 
-.container-projects div {
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-projects .project-img {
     background-color: #CBBD6C;
-    width: 30%;
+    height: 230px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.tools-bar{
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.tools-bar img{
+    height: 90%;
+}
+
+.container-projects .project-img a {
+    height: 100%;
+}
+
+.container-projects .project-img a img{
+    height: 100%;
+}
+
+.project-description{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -125,6 +166,9 @@ hr {
 
 .container-txt {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .external-link {
@@ -137,7 +181,7 @@ hr {
 }
 
 .img-contat {
-    background-color: #A08150;
+    background-color: #CBBD6C;
     border-radius: 20%;
     height: 100px;
 }
@@ -161,6 +205,44 @@ hr {
     font-weight: bold;
     font-size: 18px;
 }
+
+.container-slider{
+    margin-top: 40px;
+}
+
+/*Infinite slider*/
+.slider{
+    width: 60%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slide-track{
+    display: flex;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+    width: calc(100px * 12);
+}
+
+.slide{
+    width: 100px;
+}
+
+.slide img{
+    width: 100%;
+}
+
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-100px*6));
+        transform: translateX(calc(-100px*6));
+    }
+}
+
 
 /*MEDIUM SCREENS*/
 
