@@ -58,6 +58,7 @@ hr {
 
 
 .main {
+    width: 100vw;
     background-color: #2B2D31;
     display: flex;
     justify-content: center;
@@ -67,6 +68,7 @@ hr {
     background-color: #313338;
     margin-top: 40px;
     border-radius: 15px;
+    width: 100%;
     max-width: 1024px;
     border: 2px solid #A08150;
     margin-bottom: 20px;
@@ -83,9 +85,7 @@ hr {
 }
 
 .img-profile {
-    max-width: 100%;
-    height: 250px;
-    width: 250px;
+    width: 75%;
     border-radius: 100%;
     border: 5px solid #A08150;
 }
@@ -94,51 +94,54 @@ hr {
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding: 20px 30px 0px 0px;
-    gap: 10px;
+    padding: 1% 5% 0% 0%;
+    gap: 3%;
 }
 
 .container-projects {
     display: flex;
     flex-wrap: wrap;
     padding: 30px 70px;
-    justify-content: space-between;
     width: 100%;
-    gap: 30px;
+    gap: 5%;
 }
 
-.project{
+.project {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 45%;
+    flex-wrap: wrap;
 }
+
 .container-projects .project-img {
     background-color: #CBBD6C;
-    height: 230px;
+    width: 100%;
     border-radius: 5px;
     padding: 10px;
     position: relative;
 }
 
-.tools-bar{
+.tools-bar {
     height: 60px;
     border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.tools-bar img{
+.tools-bar img {
     height: 90%;
 }
 
 .container-projects .project-img a {
-    height: 100%;
+    width: 100%;
 }
 
-.container-projects .project-img a img{
-    height: 100%;
+.container-projects .project-img a img {
+    width: 100%;
 }
 
-.project-description{
+.project-description {
     display: none;
     position: absolute;
     top: 50%;
@@ -160,8 +163,6 @@ hr {
     width: 48%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-
 }
 
 .container-txt {
@@ -181,21 +182,31 @@ hr {
 }
 
 .img-contat {
-    background-color: #CBBD6C;
-    border-radius: 20%;
-    height: 100px;
+    width: 70%;
+}
+
+.container-contacts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ul-contact {
-    margin-top: 25px;
+    width: 80%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding-bottom: 20px;
+    margin: 5%;
+}
+.ul-contact a{
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
+
 .footer {
+    width: 100%;
     padding-left: 20px;
     background-color: #A08150;
 }
@@ -206,38 +217,39 @@ hr {
     font-size: 18px;
 }
 
-.container-slider{
+.container-slider {
     margin-top: 40px;
 }
 
 /*Infinite slider*/
-.slider{
+.slider {
     width: 60%;
     overflow: hidden;
     border-radius: 8px;
 }
 
-.slide-track{
+.slide-track {
     display: flex;
     animation: scroll 20s linear infinite;
     -webkit-animation: scroll 20s linear infinite;
     width: calc(100px * 12);
 }
 
-.slide{
+.slide {
     width: 100px;
 }
 
-.slide img{
+.slide img {
     width: 100%;
 }
 
 @keyframes scroll {
-    0%{
+    0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         -webkit-transform: translateX(calc(-100px*6));
         transform: translateX(calc(-100px*6));
     }
@@ -247,3 +259,90 @@ hr {
 /*MEDIUM SCREENS*/
 
 /*SMALL SCREENS*/
+
+@media screen and (max-width:426px) {
+    .main {
+        width: 425px;
+    }
+
+    .container-main {
+        width: 320px;
+    }
+
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .img-profile {
+        height: 250px;
+        width: 250px;
+    }
+
+    .container-name {
+        width: 90%;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .container-name h1 {
+        font-size: 25px;
+    }
+
+    .container-name h3 {
+        font-size: 18px;
+    }
+
+    .container-name h4 {
+        font-size: 16px;
+    }
+
+    .container-projects{
+        flex-direction: column;
+        gap: 60px;
+        padding: 0%;
+    }
+
+    .project{
+        width: 100%;
+    }
+
+    .project .project-img {
+        width: 90%;
+    }
+
+    .project-img img{
+        width: 90%;
+    }
+
+    .ul-contact{
+        flex-wrap: wrap;
+    }
+
+    .container-info{
+        flex-direction: column;
+        width: 100%;
+    } 
+
+    .subcontainer-info{
+        width: 100%;
+    }
+
+    .movil-margin{
+        margin-top: 10px;
+    }
+
+    h2{
+        font-size: 48px;
+    }
+
+    .container-name h1{
+        font-size: 60px;
+    }
+
+    .container-name h3{
+        font-size: 30px;
+    }
+}
