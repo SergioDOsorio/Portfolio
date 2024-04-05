@@ -172,9 +172,18 @@ hr {
     gap: 10px;
 }
 
+.container-txt p{
+    font-size: 20px;
+}
+
+
 .external-link {
     text-decoration: none;
     display: flex;
+}
+
+.external-link h3{
+    font-size: 40px;
 }
 
 .external-link img {
@@ -193,13 +202,13 @@ hr {
 }
 
 .ul-contact {
-    width: 80%;
+    
     display: flex;
     justify-content: center;
     margin: 5%;
+    width: 60%;
 }
 .ul-contact a{
-    width: 20%;
     display: flex;
     justify-content: center;
 }
